@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WorkPrev - Segurança do Trabalho</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1a365d',
+            secondary: '#2c5282',
+            accent: '#3182ce',
+            dark: '#1a202c',
+            light: '#f7fafc',
+          },
+          fontFamily: {
+            sans: ['Sora', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="./style.css" rel="stylesheet">
+  
+
+</head>
+<body class="font-sans bg-gray-50">
+  <nav class="fixed w-full bg-white shadow-md z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center">
+        <img 
+          src="./assets/WORK_PREV-removebg-preview.png" 
+          alt="WorkPrev" 
+          class="h-12"
+        >
+      </div>
+      
+      <div class="hidden md:flex space-x-8">
+        <a href="#home" class="nav-link text-gray-800 hover:text-blue-600">Home</a>
+        <a href="#about" class="nav-link text-gray-800 hover:text-blue-600">Sobre</a>
+        <a href="#services" class="nav-link text-gray-800 hover:text-blue-600">Serviços</a>
+        <a href="#contact" class="nav-link text-gray-800 hover:text-blue-600">Contato</a>
+      </div>
+      
+      <div class="hidden md:block">
+        <a 
+          href="https://api.whatsapp.com/send?phone=5511967215756&text=Quero%20fazer%20um%20agendamento%20hoje!" 
+          class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition duration-300"
+        >
+          Fale com um especialista
+        </a>
+      </div>
+      
+      <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+      <div class="flex flex-col space-y-3">
+        <a href="#home" class="nav-link text-gray-800 hover:text-blue-600">Home</a>
+        <a href="#about" class="nav-link text-gray-800 hover:text-blue-600">Sobre</a>
+        <a href="#services" class="nav-link text-gray-800 hover:text-blue-600">Serviços</a>
+        <a href="#contact" class="nav-link text-gray-800 hover:text-blue-600">Contato</a>
+        <a 
+          href="https://api.whatsapp.com/send?phone=5511967215756&text=Quero%20fazer%20um%20agendamento%20hoje!" 
+          class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-center transition duration-300"
+        >
+          Fale conosco
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-home flex items-center justify-center text-center text-white section">
+    <div class="container mx-auto px-4" data-aos="fade-up">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">A SEGURANÇA DA SUA EMPRESA EM BOAS MÃOS</h1>
+      <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+        Soluções completas em segurança do trabalho e meio ambiente para proteger seu negócio e seus colaboradores.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a 
+          href="https://api.whatsapp.com/send?phone=5511967215756&text=Quero%20fazer%20um%20agendamento%20hoje!" 
+          class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-md text-lg font-medium transition duration-300"
+        >
+          Contate-nos
+        </a>
+        <a 
+          href="#services" 
+          class="bg-white hover:bg-gray-100 text-blue-600 px-8 py-3 rounded-md text-lg font-medium transition duration-300"
+        >
+          Nossos Serviços
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-white section">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Sobre Nós</h2>
+      
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+        <div class="lg:w-1/2" data-aos="fade-right">
+          <img 
+            src="./assets/258665.jpg" 
+            alt="Equipe de segurança do trabalho" 
+            class="rounded-lg shadow-xl w-full"
+          >
+        </div>
+        
+        <div class="lg:w-1/2" data-aos="fade-left">
+          <p class="text-gray-700 mb-6">
+            A Work Prev atua no mercado realizando Assessoria de Segurança do Trabalho e Meio Ambiente. Visando sempre atender as expectativas dos clientes, a Work Prev vem crescendo a cada dia, onde conta com uma equipe de profissionais altamente especializados e sempre atualizados para atender as necessidades do cliente.
+          </p>
+          
+          <p class="text-gray-700 mb-6">
+            Buscamos a excelência em nossos trabalhos, solucionando a necessidade de nossos clientes. Tendo como objetivo assessorar empresas no cumprimento da legislação de saúde, segurança do trabalho e meio ambiente.
+          </p>
+          
+          <p class="text-gray-700 mb-6">
+            A Work Prev desenvolveu um sistema informatizado de elaboração e administração dos documentos, ações, treinamentos exigidos pela legislação trabalhista e organismos certificados de qualidade.
+          </p>
+          
+          <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-600">
+            <h3 class="text-xl font-semibold text-blue-800 mb-3">Nossa Missão</h3>
+            <p class="text-gray-700">
+              Unindo experiência de profissionais com formação, as mais modernas tecnologias de engenharia de segurança, medicina ocupacional e meio ambiente existentes no mercado, protegendo a saúde de seus colaboradores e evitando ações de responsabilidade acidentária.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-gray-50 section">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nossos Serviços</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          A Work Prev tem como objetivo fornecer à seus clientes, serviços de segurança do trabalho com qualidade e eficiência, atendendo aos requisitos das Normas Regulamentadoras.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="service-card bg-white rounded-lg overflow-hidden shadow-md" data-aos="zoom-in">
+          <img 
+            src="./assets/treinamento_de_trabalho_em_altura.jpg" 
+            alt="Treinamentos" 
+            class="w-full h-48 object-cover"
+          >
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-3">Treinamentos</h3>
+            <p class="text-gray-600 mb-4">
+              Treinamentos especializados em segurança do trabalho, incluindo trabalho em altura, espaço confinado, NRs e muito mais.
+            </p>
+            <button class="text-blue-600 font-medium hover:text-blue-800 transition duration-300 service-details-btn" data-service="1">
+              Saiba mais <i class="fas fa-chevron-right ml-1"></i>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Service 2 -->
+        <div class="service-card bg-white rounded-lg overflow-hidden shadow-md" data-aos="zoom-in" data-aos-delay="100">
+          <img 
+            src="./assets/treinamento-nr-23.jpg" 
+            alt="Prevenção de Incêndio" 
+            class="w-full h-48 object-cover"
+          >
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-3">Legislação Contra Incêndio</h3>
+            <p class="text-gray-600 mb-4">
+              Assessoria completa em prevenção e combate a incêndios, atendendo todas as exigências da NR 23 e corpo de bombeiros.
+            </p>
+            <button class="text-blue-600 font-medium hover:text-blue-800 transition duration-300 service-details-btn" data-service="2">
+              Saiba mais <i class="fas fa-chevron-right ml-1"></i>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Service 3 -->
+        <div class="service-card bg-white rounded-lg overflow-hidden shadow-md" data-aos="zoom-in" data-aos-delay="200">
+          <img 
+            src="./assets/ESOCIAL.jpg" 
+            alt="E-Social" 
+            class="w-full h-48 object-cover"
+          >
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-3">Eventos E-Social</h3>
+            <p class="text-gray-600 mb-4">
+              Gestão completa dos eventos de SST no eSocial, garantindo conformidade legal e evitando multas e penalidades.
+            </p>
+            <button class="text-blue-600 font-medium hover:text-blue-800 transition duration-300 service-details-btn" data-service="3">
+              Saiba mais <i class="fas fa-chevron-right ml-1"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Service Details Modal -->
+      <div id="service-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+          <div class="p-6">
+            <div class="flex justify-between items-center mb-4">
+              <h3 id="modal-title" class="text-2xl font-bold text-gray-800"></h3>
+              <button id="close-modal" class="text-gray-500 hover:text-gray-700">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            
+            <div id="modal-content" class="text-gray-700">
+              <!-- Content will be loaded here -->
+            </div>
+            
+            <div class="mt-6">
+              <a 
+                href="https://api.whatsapp.com/send?phone=5511967215756&text=Quero%20saber%20mais%20sobre%20este%20serviço!" 
+                class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md inline-block transition duration-300"
+              >
+                Solicitar Orçamento
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-white section">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Fale Conosco</h2>
+      
+      <div class="flex flex-col lg:flex-row gap-12">
+        <div class="lg:w-1/2">
+          <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold text-gray-800 mb-6">Envie sua mensagem</h3>
+            
+            <form class="contact-form space-y-4">
+              <div>
+                <label for="name" class="block text-gray-700 mb-2">Nome</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-200"
+                  required
+                >
+              </div>
+              
+              <div>
+                <label for="email" class="block text-gray-700 mb-2">E-mail</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-200"
+                  required
+                >
+              </div>
+              
+              <div>
+                <label for="phone" class="block text-gray-700 mb-2">Telefone</label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-200"
+                  required
+                >
+              </div>
+              
+              <div>
+                <label for="message" class="block text-gray-700 mb-2">Mensagem</label>
+                <textarea 
+                  id="message" 
+                  rows="4" 
+                  class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-200"
+                  required
+                ></textarea>
+              </div>
+              
+              <button 
+                type="submit" 
+                class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md transition duration-300 w-full"
+              >
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
+        </div>
+        
+        <div class="lg:w-1/2">
+          <div class="bg-gray-50 p-8 rounded-lg shadow-md h-full">
+            <h3 class="text-xl font-semibold text-gray-800 mb-6">Nossas Informações</h3>
+            
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                  <i class="fas fa-map-marker-alt text-blue-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-medium text-gray-800">Endereço</h4>
+                  <p class="text-gray-600">
+                    R. Eng. Paulo Frontim - Vila Rio de Janeiro, Guarulhos - SP, 07131-100
+                  </p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                  <i class="fas fa-phone-alt text-blue-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-medium text-gray-800">Telefone</h4>
+                  <p class="text-gray-600">(11) 96721-5756</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                  <i class="fas fa-envelope text-blue-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-medium text-gray-800">E-mail</h4>
+                  <p class="text-gray-600">contato@workprev.com.br</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                  <i class="fas fa-clock text-blue-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-medium text-gray-800">Horário de Atendimento</h4>
+                  <p class="text-gray-600">Segunda a Sexta: 8h às 18h</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- <div class="mt-8">
+              <h4 class="font-medium text-gray-800 mb-4">Siga-nos nas redes sociais</h4>
+              <div class="flex space-x-4">
+                <a href="#" class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition duration-300">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="bg-pink-600 text-white p-3 rounded-full hover:bg-pink-700 transition duration-300">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="bg-black text-white p-3 rounded-full hover:bg-gray-800 transition duration-300">
+                  <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="#" class="bg-blue-400 text-white p-3 rounded-full hover:bg-blue-500 transition duration-300">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <img 
+            src="./assets/WORK_PREV-removebg-preview.png" 
+            alt="WorkPrev Logo" 
+            class="h-10 mb-4"
+          >
+          <p class="text-gray-400">
+            Soluções completas em segurança do trabalho e meio ambiente para proteger seu negócio e seus colaboradores.
+          </p>
+        </div>
+        
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Links Rápidos</h4>
+          <ul class="space-y-2">
+            <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+            <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">Sobre Nós</a></li>
+            <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Serviços</a></li>
+            <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contato</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Serviços</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Treinamentos</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Prevenção de Incêndio</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">E-Social</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Consultoria Completa</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Contato</h4>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <i class="fas fa-map-marker-alt mr-2 text-blue-400"></i>
+              <span class="text-gray-400">R. Eng. Paulo Frontim, Guarulhos - SP</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-phone-alt mr-2 text-blue-400"></i>
+              <span class="text-gray-400">(11) 96721-5756</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-envelope mr-2 text-blue-400"></i>
+              <span class="text-gray-400">contato@workprev.com.br</span>
+            </li>
+          </ul>
+          
+          <!-- <div class="mt-4">
+            <h4 class="text-lg font-semibold mb-2">Redes Sociais</h4>
+            <div class="flex space-x-3">
+              <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                <i class="fab fa-tiktok"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+        <p>&copy; 2024 WorkPrev. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a 
+    href="https://api.whatsapp.com/send?phone=5511967215756&text=Quero%20fazer%20um%20agendamento%20hoje!" 
+    class="btn-whatsapp"
+    target="_blank"
+  >
+    <i class="fab fa-whatsapp text-2xl"></i>
+  </a>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="fixed bottom-20 right-5 bg-blue-600 text-white p-3 rounded-full shadow-lg hidden">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+</body>
+</html>
